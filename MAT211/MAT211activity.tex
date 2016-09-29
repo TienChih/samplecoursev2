@@ -27,15 +27,6 @@ $$\graph[xmin=-10,xmax=10]{x+1\left\{x<3\right\}, \frac{x^2}{3}-8\left\{x\ge 3\r
 
 
 \begin{itemize}
-\item The limit of $f$ as $x$ approaches 0 from the left is $\displaystyle\lim_{x\to 0^-}=\answer[]{1}$.
-\item The limit of $f$ as $x$ approaches 0 from the right is $\displaystyle\lim_{x\to 0^+}=\answer[]{1}$.
-\item The actual value of $f$ when $x=0$ is $f(0)=\answer[]{1}$.
-\item From this what can we conclude:
-\begin{multipleChoice}
-\choice[correct]{$f(x)$ is continuous at $x=0$.}
-\choice{$f(x)$ is not continuous at $x=0$.}
-\choice{We do not have enough information to determine the continuity of $f(x)$ at $x=0$.}
-\end{multipleChoice}
 \item The limit of $f$ as $x$ approaches 3 from the left is $\displaystyle\lim_{x\to 3^-}=\answer[]{4}$.
 \item The limit of $f$ as $x$ approaches 3 from the right is $\displaystyle\lim_{x\to 3^+}=\answer[]{5}$.
 \item The actual value of $f$ when $x=3$ is $f(3)=\answer[]{5}$.
@@ -64,7 +55,6 @@ Recall that the difference quotient for any function $f$ when $x=a$ and given so
 
 \begin{enumerate}
 \item The difference quotient for $f$ when $x=1$ and $h=0.5$ is approximately $\answer[ ]{0.4495}$ (Round to four decimal places). 
-\item The difference quotient for $f$ when $x=1$ and $h=0.1$ is approximately $\answer[ ]{0.4881}$ (Round to four decimal places).  
 \item The difference quotient for $f$ when $x=3$ and $h=0.1$ is approximately $\answer[ ]{0.2863}$ (Round to four decimal places).\\ \\
 \item We will now compute the limit definition of the derivative of $ f'(x):={\displaystyle \lim_{h\to 0}} \frac{f(x+h)-f(x)}{h}$.
 
@@ -136,14 +126,14 @@ Similarly, $\frac{dy}{dt}$ which represents your change in height, ought to be:
 
 To actually find $\frac{dy}{dt}$, we revisit our old friend implict differentiation.  Consider that for any possible values for $x$ and $y$, it must be that:
 
-\begin{align*}
-x^2+ y^2 &\ =\ 50^2\\
-\intertext{Differentiating both sides with respect to $t$ (after all, these values are all changing over time so that's the appropriate variable) gives us:}\\
-\answer{2x}\frac{dx}{dt}+\answer{2y}\frac{dy}{dt}&\ =\ 0\\
-\intertext{Then, evaluating this expression for known values gives us:}\\
-\answer{120}+\answer{80}\frac{dy}{dt}&\ =\ 0\\
-\frac{dy}{dt}&\ =\ \answer{-1.5}\ \text{feet/sec}
-\end{align*}
+\begin{eqnarray*}
+x^2+ y^2 &=& 50^2\\
+&&\text{Differentiating both sides with respect to $t$ gives us:}\\
+\answer{2x}\frac{dx}{dt}+\answer{2y}\frac{dy}{dt}&=& 0\\
+\text{Evaluating this expression for known values gives us:}\\
+\answer{120}+\answer{80}\frac{dy}{dt}&=& 0\\
+\frac{dy}{dt}&=& \answer{-1.5}\ \text{feet/sec}
+\end{eqnarray*}
 
 That's not good!  But it get's worse.  What about when you're 5 feet off the ground?  We see that $x=\answer{\sqrt{2500-25}}$ feet, and thus $\frac{dy}{dt}=\answer{-\sqrt{2500-25}/5}$ or approximately $\approx \answer{-9.9499}$ (round to 4 decimal places) feet/sec!
 
@@ -169,17 +159,6 @@ $$\graph[xmin=-1, xmax=7, panel]{F=x^2-3x, F<y<0\left\{0<x<3\right\},0<y<F\left\
 Notice that if $n=2$, then the length of each interval is $\answer{3}$.  Then taking the left endpoint of each interval, the sum of the signed area of our rectangles (in ascending order of $x$) is: $$\answer{3}(f(\answer{0})+f(\answer{3}))=\answer{3}(\answer{0}+\answer{0})=\answer{0}.$$
 \end{explanation}
 
-\item Use $n=2$ intervals and the right hand sum to estimate $\displaystyle\int_0^6 x^2-3x\ dx$. \\ \\
-\begin{explanation}
-Notice that if $n=2$, then the length of each interval is $\answer{3}$.  Then taking the right endpoint of each interval, the sum of the signed area of our rectangles (in ascending order of $x$) is: $$\answer{3}(f(\answer{3})+f(\answer{6}))=\answer{3}(\answer{0}+\answer{18})=\answer{54}.$$
-
-\end{explanation}
-
-\item Use $n=3$ intervals and the left hand sum to estimate $\displaystyle\int_0^6 x^2-3x\ dx$. \\ \\
-\begin{explanation}
-Notice that if $n=3$, then the length of each interval is $\answer{2}$.  Then taking the left endpoint of each interval, the sum of the signed area of our rectangles (in ascending order of $x$) is: $$\answer{2}(f(\answer{0})+f(\answer{2})+f(\answer{4}))=\answer{2}(\answer{0}+\answer{-2}+\answer{4})=\answer{4}.$$
-
-\end{explanation}
 
 
 
